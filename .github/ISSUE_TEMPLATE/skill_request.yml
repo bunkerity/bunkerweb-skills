@@ -1,0 +1,57 @@
+name: ✨ Skill Request
+description: Suggest a new skill, or a major enhancement to an existing one.
+title: "[Skill] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        #### Before opening a skill request, please search the
+        [existing issues](https://github.com/bunkerity/bunkerweb-skills/issues?q=is%3Aissue+sort%3Acreated-desc+)
+        to make sure a similar idea is not already being tracked.
+  - type: textarea
+    id: situation
+    attributes:
+      label: The situation
+      description: What were you doing with BunkerWeb when you wanted the agent to know more? Name the files, settings or error messages involved, and the phrases someone would actually say. This becomes the skill's `description`.
+      placeholder: e.g. Writing a custom Lua plugin phase, "why does my access phase never run".
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: What does the agent get wrong today?
+      description: The actual mistake, wrong assumption, or wasted debugging session a skill would prevent.
+      placeholder: What went wrong, and what the agent should have known.
+    validations:
+      required: true
+  - type: input
+    id: bunkerweb-version
+    attributes:
+      label: BunkerWeb version
+      description: The release you are running. The skills are verified against the release in `BUNKERWEB_REF`.
+      placeholder: e.g. 1.6.15
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Related resources
+      description: Links to the BunkerWeb documentation, source, issue or discussion this comes from. Link to them; do not paste them.
+      placeholder: Documentation pages, source files, issues, forum threads.
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Willing to contribute?
+      description: Let us know how you can help move this forward.
+      options:
+        - label: I can submit a pull request for this skill.
+        - label: I can help test or provide feedback.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow the project [Code of Conduct](https://github.com/bunkerity/bunkerweb-skills/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true

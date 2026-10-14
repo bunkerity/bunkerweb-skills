@@ -1,0 +1,5 @@
+REQUEST_HEADERS  # ModSecurity variable
+REQUEST_FILENAME  # ModSecurity variable
+REQUEST_METHOD  # ModSecurity variable
+CUSTOM_CONF  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and Docker label (src/common/gen/save_config.py)
+CONFIG_TYPE  # Swarm label bunkerweb.CONFIG_TYPE and ConfigMap annotation bunkerweb.io/CONFIG_TYPE (src/autoconf/controllers)

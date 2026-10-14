@@ -1,0 +1,4 @@
+# Tokens used by bunkerweb-migrate-swag that are not BunkerWeb settings. One per line, source after the #.
+EXTRA_DOMAINS  # SWAG container environment variable (lscr.io/linuxserver/swag 2.6.0, /etc/s6-overlay/s6-rc.d/init-certbot-config/run)
+ONLY_SUBDOMAINS  # SWAG container environment variable (same file)
+DOCKER_MODS  # linuxserver.io container environment variable listing mods loaded at start

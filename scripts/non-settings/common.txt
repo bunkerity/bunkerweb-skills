@@ -1,0 +1,2 @@
+# Tokens that are not BunkerWeb settings but legitimately appear in skills.
+# One token per line; say where it comes from after a #. Skill-specific tokens go in <skill-name>.txt.

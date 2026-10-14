@@ -1,0 +1,4 @@
+# Tokens used by the lane-14d app notes (vaultwarden, forgejo, paperless-ngx, pi-hole, xen-orchestra) that are not BunkerWeb settings. One per line, source after the #.
+ARGS_POST  # ModSecurity variable (collection of body arguments)
+ROOT_URL  # Forgejo app.ini option, not a BunkerWeb setting
+PAPERLESS_URL  # Paperless-ngx environment variable, not a BunkerWeb setting

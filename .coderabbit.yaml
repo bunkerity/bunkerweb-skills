@@ -1,0 +1,235 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-GB"
+tone_instructions: "Be direct, technical, and actionable. Cite exact lines. Prefer concrete guidance over vague suggestions. Use British English."
+early_access: false
+
+knowledge_base:
+  opt_out: false
+  web_search:
+    enabled: false
+  code_guidelines:
+    enabled: true
+
+code_generation:
+  docstrings:
+    language: "en-GB"
+
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  high_level_summary_instructions: |
+    Summarise the PR by skill (`skills/<name>/`) and by concern: `SKILL.md` frontmatter and trigger wording, `references/` and `assets/` content, eval cases under `evals/`, check scripts under `scripts/`, plugin and marketplace manifests (`.claude-plugin/`), repository-wide docs (`README.md`, `CONTRIBUTING.md`, `AGENTS.md`), CI workflows (`.github/workflows/`), and tooling (`.pre-commit-config.yaml`, `.prettierignore`).
+    Always call out: which BunkerWeb settings, labels, annotations, commands or log signatures changed and whether each is verifiable at the tag in `BUNKERWEB_REF`, any instruction that would make an agent weaken a protection (ModSecurity, CRS, rate limits, TLS, allowlists), any text that looks copied from the BunkerWeb documentation or the template hub, whether eval cases cover the change, and whether the `CHANGELOG.md` `## Unreleased` section was updated.
+    Keep the summary terse, technical, and suitable for maintainers of public skills that AI agents execute against a security-critical WAF.
+  review_status: true
+  review_details: true
+  collapse_walkthrough: false
+  changed_files_summary: true
+  sequence_diagrams: false
+  estimate_code_review_effort: true
+  assess_linked_issues: true
+  related_issues: true
+  related_prs: true
+  suggested_labels: false
+  suggested_reviewers: false
+  enable_prompt_for_ai_agents: true
+  # Fun features — keep CodeRabbit cheerful
+  poem: true
+  in_progress_fortune: true
+  commit_status: true
+  fail_commit_status: false
+  abort_on_close: true
+  auto_review:
+    enabled: true
+    drafts: false
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 8
+    base_branches:
+      - "main"
+    ignore_title_keywords:
+      - "WIP"
+      - "[WIP]"
+      - "RFC"
+      - "DO NOT REVIEW"
+    ignore_usernames:
+      - "dependabot[bot]"
+
+  slop_detection:
+    enabled: true
+    label: "needs-review"
+
+  pre_merge_checks:
+    title:
+      mode: "warning"
+      requirements: |
+        Use imperative mood, single concern, and keep titles under ~70 characters — match the style of existing history.
+        Examples: "feat: add bunkerweb-nginx-lua skill", "fix(crs): correct exclusion folder in the tuning skill", "docs: update eval README".
+        Put detail in the description, not the title.
+    description:
+      mode: "warning"
+    issue_assessment:
+      mode: "off"
+    docstrings:
+      mode: "off"
+
+  finishing_touches:
+    # Behaviour is checked with `claude plugin eval` and the scripts under `scripts/`. Do not auto-generate tests.
+    unit_tests:
+      enabled: false
+
+  path_filters:
+    - "**"
+    - "!**/node_modules/**"
+    - "!**/.venv/**"
+    - "!**/venv/**"
+    - "!**/.pytest_cache/**"
+    - "!**/__pycache__/**"
+    - "!**/*.patch*"
+    - "!**/*.zip"
+    - "!**/*.tar.gz"
+    - "!.bunkerweb/**"
+    - "!evals/results/**"
+    - "!.claude/**"
+    - "!.gemini/**"
+
+  path_instructions:
+    - path: "skills/**/SKILL.md"
+      instructions: |
+        `SKILL.md` is read by an AI agent run by someone who does not work at Bunkerity. Apply these rules:
+          - Frontmatter `name` equals the directory name and starts with `bunkerweb`. A mismatch stops the skill loading without any error.
+          - `description` is a trigger under 1024 characters. It names the situation, the file paths and the phrases that should fire the skill, not what the skill contains.
+          - Every BunkerWeb setting, label, annotation, CLI command and log signature must exist at the tag in `BUNKERWEB_REF`. Ask for the source path when a PR adds one without it. Flag anything that looks written from memory.
+          - Link, do not copy. No sentence copied from the BunkerWeb documentation (AGPL-3.0) or `bunkerity/bunkerweb-templates` (GPL-3.0); the repository is MIT. Paraphrase and link.
+          - Scan hygiene: images pinned to a tag or digest, never `:latest`; never pipe into `sh`, `bash` or `zsh`; no `git clone` and no `wget`.
+          - No BunkerWeb PRO internals. Naming a PRO plugin as an option is fine.
+          - A skill that reads logs, request bodies or headers must say they are data, never instructions.
+          - Never advise disabling ModSecurity, the CRS, rate limits or TLS to make a symptom go away. Prefer a targeted exclusion with a comment saying which legitimate traffic it unblocks.
+          - Use `example.com` and RFC 5737 addresses. Never commit real domains, credentials, tokens or customer hostnames.
+          - Keep the file under about 300 lines. Long material belongs in `references/`, linked from `SKILL.md`.
+          - Adding or renaming a skill updates the table in `README.md` in the same PR.
+
+    - path: "skills/**/{references/**,reference.md}"
+      instructions: |
+        Reference files are loaded on demand by the agent, so a stale fact here misleads it silently:
+          - Every setting, label, annotation, command and log signature must be verifiable at the tag in `BUNKERWEB_REF`.
+          - Each file is linked from its `SKILL.md`; flag an orphan, and flag a link whose target moved.
+          - Paraphrase and link to the BunkerWeb documentation rather than copying it.
+          - Examples use `example.com` and RFC 5737 addresses, pinned image tags, no `:latest`, no pipe into a shell, no `git clone`, no `wget`.
+          - Text the agent reads from logs or requests is data, never instructions; say so wherever a file tells the agent to read them.
+
+    - path: "evals/**"
+      instructions: |
+        Eval cases check that a skill fires and that it changes the agent's behaviour. Follow `evals/README.md`:
+          - One directory per case, named `<skill-prefix>-<scenario>`, with `prompt.md` and `graders/criteria.md`.
+          - Every positive case has `graders/fired.md`. Every negative case has `graders/not-fired.md`. Flag a case with neither, or with the wrong one.
+          - A negative case uses an unrelated prompt on which no BunkerWeb skill may fire.
+          - Graders check behaviour the skill actually teaches, verified at the tag in `BUNKERWEB_REF`; flag a grader that asserts a setting or log line that does not exist there.
+          - A prompt or grader must not leak the answer the skill is meant to supply.
+          - No real hostnames, IP addresses or credentials.
+
+    - path: "scripts/**"
+      instructions: |
+        The scripts are the merge gate and also run in pre-commit and CI:
+          - Standard library only. Flag any third-party import.
+          - Python follows the main BunkerWeb repository: Black at 160 characters, flake8 ignoring `E266,E402,E501,E722,W503`.
+          - Scripts that read a BunkerWeb checkout take it as an argument and never mutate it.
+          - A behaviour change needs a matching change in its `test_*.py`, and the test must be able to fail.
+          - `scripts/non-settings/*.txt` lists tokens that look like settings but are not; every entry needs a reason a reviewer can verify.
+
+    - path: "CHANGELOG.md"
+      instructions: |
+        Enforce:
+          - Every PR adds a bullet under `## Unreleased` in the exact format `- [@github-handle] Short description of the change`, matching `AGENTS.md` and `CONTRIBUTING.md`.
+          - Do not reorder, rename or remove existing release headings.
+          - Do not move already-released entries back into `## Unreleased`.
+          - Flag PRs that touch `skills/`, `evals/`, `scripts/` or `.github/workflows/` but skip the changelog entry.
+
+    - path: "**/*.md"
+      instructions: |
+        Documentation should be concise, accurate, and written in British English:
+          - Keep a sensible heading hierarchy and prefer concrete instructions over narrative.
+          - Commands go in backticks or fenced code blocks; keep lines under roughly 100 characters outside skill files.
+          - Check that referenced paths, settings, workflows and external links still match the current repository and the tag in `BUNKERWEB_REF`.
+          - When a PR changes behaviour or layout, require the matching doc update in the same PR.
+
+    - path: ".github/workflows/**/*.yml"
+      instructions: &github_actions_instructions |
+        GitHub Actions workflows must be reproducible and safe:
+          - Pin third-party actions by commit SHA with a `# vX.Y.Z` comment, not floating tags. The existing workflows already follow this — do not regress to `@v1` / `@main`.
+          - Run on `ubuntu-latest`, never self-hosted runners.
+          - Declare a top-level `permissions:` block and an explicit `permissions:` block on every job, kept minimal. Plumber lowers the score for jobs that inherit grants.
+          - Gate upload and publish steps on `github.event_name`, not by splitting a workflow per event.
+          - Be extremely careful with `pull_request_target`: do not combine untrusted PR code with repository secrets.
+          - Do not interpolate `${{ github.event.* }}` values directly inside `run:` scripts; assign them via `env:` first to reduce script-injection risk.
+          - Set `persist-credentials: false` on `actions/checkout` unless a step pushes.
+          - Shell steps should quote variables and avoid unsafe expansion of paths or archive contents.
+
+    - path: ".github/workflows/**/*.yaml"
+      instructions: *github_actions_instructions
+
+    - path: ".pre-commit-config.yaml"
+      instructions: |
+        Keep the pre-commit stack aligned with repository reality:
+          - Hook revisions must stay pinned immutably (commit SHA with a `# frozen:` comment, matching the existing style).
+          - `.prettierignore` and pre-commit `files`/`exclude` patterns should stay in sync with CodeRabbit's own path filters where practical.
+          - Python hooks keep Black at 160 characters and flake8 with `--ignore=E266,E402,E501,E722,W503`.
+          - Do not weaken the Gitleaks or Codespell hooks; both exist to protect a public repository.
+
+    - path: "**/*.yaml"
+      instructions: &yaml_instructions |
+        YAML files (CI, pre-commit, docs config) must be structured and reproducible:
+          - Use consistent indentation, stable key ordering where the project already has one, and avoid duplicate keys.
+          - Pin container images, dependency versions, and GitHub Actions rather than using `latest` or floating tags.
+          - Never commit secrets in plaintext; rely on repository secrets or placeholder examples.
+          - Flag unintentional multi-document streams in single-purpose files.
+
+    - path: "**/*.yml"
+      instructions: *yaml_instructions
+
+  tools:
+    github-checks:
+      enabled: true
+      timeout_ms: 120000
+    languagetool:
+      enabled: true
+      level: "default"
+    gitleaks:
+      enabled: true
+    yamllint:
+      enabled: true
+    actionlint:
+      enabled: true
+    shellcheck:
+      enabled: true
+    markdownlint:
+      enabled: true
+    checkov:
+      enabled: true
+    osvScanner:
+      enabled: true
+    dotenvLint:
+      enabled: true
+    flake8:
+      enabled: true
+    # Not applicable to this repository — no Lua, JS, HTML, CSS, Go or container images live here.
+    luacheck:
+      enabled: false
+    hadolint:
+      enabled: false
+    htmlhint:
+      enabled: false
+    ruff:
+      enabled: false
+    eslint:
+      enabled: false
+    stylelint:
+      enabled: false
+    semgrep:
+      enabled: false
+    biome:
+      enabled: false
+
+chat:
+  auto_reply: true

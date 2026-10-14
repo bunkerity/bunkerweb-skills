@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bunkerweb",
+  "description": "Deploy and operate BunkerWeb: install, troubleshoot, tune ModSecurity and OWASP CRS, and migrate from nginx, Nginx Proxy Manager, SWAG, ingress-nginx, Traefik, Caddy, Apache httpd, HAProxy and standalone ModSecurity.",
+  "owner": {
+    "name": "Bunkerity",
+    "url": "https://github.com/bunkerity"
+  },
+  "plugins": [
+    {
+      "name": "bunkerweb",
+      "description": "Deploy and operate BunkerWeb: install, troubleshoot, tune ModSecurity and OWASP CRS, and migrate from nginx, Nginx Proxy Manager, SWAG, ingress-nginx, Traefik, Caddy, Apache httpd, HAProxy and standalone ModSecurity.",
+      "source": "./",
+      "category": "security",
+      "keywords": [
+        "bunkerweb",
+        "waf",
+        "modsecurity",
+        "owasp-crs",
+        "reverse-proxy",
+        "nginx",
+        "security",
+        "kubernetes",
+        "nginx-proxy-manager",
+        "swag",
+        "ingress-nginx",
+        "traefik",
+        "caddy",
+        "apache",
+        "haproxy"
+      ]
+    }
+  ]
+}

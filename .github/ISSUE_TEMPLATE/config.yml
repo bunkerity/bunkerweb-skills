@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: BunkerWeb community Discord
+    about: Questions about using BunkerWeb, or about a skill idea you are not ready to file yet.
+    url: https://discord.com/invite/fTf46FmtyD
+  - name: Report a security issue
+    about: A skill that makes an agent run an unsafe command or weaken a protection. Do not open a public issue; follow the security policy.
+    url: https://github.com/bunkerity/bunkerweb-skills/blob/main/SECURITY.md

@@ -1,0 +1,4 @@
+# Tokens that are not BunkerWeb settings but appear in the lane 14b app notes (wordpress, drupal, directus, tomcat).
+# One token per line; say where it comes from after a #.
+WEBSOCKETS_ENABLED  # Directus environment variable (not a BunkerWeb setting)
+MAX_PAYLOAD_SIZE    # Directus environment variable (not a BunkerWeb setting)

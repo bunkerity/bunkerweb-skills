@@ -1,0 +1,9 @@
+# Tokens used by the lane-14a app notes (nextcloud, seafile, jellyfin, immich) that are not BunkerWeb settings. One per line, source after the #.
+TRUSTED_PROXIES  # Nextcloud container environment variable (docker image README), set on the app, not on BunkerWeb
+OVERWRITEPROTOCOL  # Nextcloud container environment variable (docker image README)
+NEXTCLOUD_TRUSTED_DOMAINS  # Nextcloud container environment variable (docker image README)
+REQUEST_HEADERS_NAMES  # ModSecurity variable
+SEAFILE_SERVER_PROTOCOL  # Seafile container environment variable (Seafile manual, Docker setup)
+SEAFILE_SERVER_HOSTNAME  # Seafile container environment variable (Seafile manual, Docker setup)
+ENABLE_NOTIFICATION_SERVER  # Seafile container environment variable (Seafile manual, notification server)
+NOTIFICATION_SERVER_URL  # Seafile container environment variable (Seafile manual, notification server)

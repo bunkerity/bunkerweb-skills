@@ -1,0 +1,3 @@
+# Tokens used by bunkerweb-migrate-ingress-nginx that are not BunkerWeb settings. One per line, source after the #.
+REQUEST_URI  # ModSecurity variable in the SecRule that excludes CRS rule 920440 (CRS rule files, owasp-modsecurity-crs)
+KUBERNETES_REVERSE_PROXY_SUFFIX_START  # environment variable the Helm chart sets on the controller (src/autoconf/controllers/KubernetesController.py, chart templates/controller-deployment.yaml)

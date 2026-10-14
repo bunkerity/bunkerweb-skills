@@ -1,0 +1,8 @@
+AUTHENTIK_BOOTSTRAP_PASSWORD  # authentik container env (first-start admin password), verified live in references/apps/authentik.md
+AUTHENTIK_BOOTSTRAP_TOKEN  # authentik container env (first-start API token), verified live in references/apps/authentik.md
+KC_HTTP_ENABLED  # Keycloak container env, verified live in references/apps/keycloak.md
+KC_PROXY_HEADERS  # Keycloak container env, verified live in references/apps/keycloak.md
+KC_HOSTNAME  # Keycloak container env, verified live in references/apps/keycloak.md
+QUARKUS_HTTP_LIMITS_MAX_BODY_SIZE  # Keycloak (Quarkus) container env, verified live in references/apps/keycloak.md
+ARGS_NAMES  # ModSecurity variable name in a ctl: action, references/apps/keycloak.md
+GF_SERVER_ROOT_URL  # Grafana container env, verified live in references/apps/grafana.md

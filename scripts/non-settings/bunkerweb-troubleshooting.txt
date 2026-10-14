@@ -1,0 +1,1 @@
+KEEP_CONFIG_ON_RESTART  # env of the bunkerweb container, read by its entrypoint, not a setting (docs/integrations.md, Docker "Environment variables")

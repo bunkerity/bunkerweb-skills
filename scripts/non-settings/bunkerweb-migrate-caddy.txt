@@ -1,0 +1,2 @@
+# Tokens used by bunkerweb-migrate-caddy that are not BunkerWeb settings. One per line, source after the #.
+CUSTOM_CONF_SERVER_HTTP  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and bunkerweb.* label (src/autoconf/controllers/DockerController.py, docs/advanced.md)

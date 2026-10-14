@@ -1,0 +1,96 @@
+name: 🐛 Bug Report
+description: Report a skill that gives wrong advice, is out of date, or does not load.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        #### Before opening a bug report, please search the
+        [existing issues](https://github.com/bunkerity/bunkerweb-skills/issues?q=is%3Aissue+sort%3Acreated-desc+)
+        to make sure it is not already being tracked. Report security problems through the
+        [security policy](https://github.com/bunkerity/bunkerweb-skills/blob/main/SECURITY.md), not here.
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: Which skill is affected?
+      placeholder: e.g. bunkerweb-modsecurity-crs-tuning
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The skill never loads
+        - The skill loads when it should not
+        - The instructions are wrong or out of date
+        - An asset or script in the skill fails
+        - Other / Not listed
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      description: Which agent, and how the skills are installed (skills.sh, plugin marketplace, symlink, copy).
+      placeholder: e.g. Claude Code 2.1.289, installed with npx skills add
+    validations:
+      required: true
+  - type: input
+    id: bunkerweb-version
+    attributes:
+      label: BunkerWeb version
+      description: The release you are running. The skills are verified against the release in `BUNKERWEB_REF`.
+      placeholder: e.g. 1.6.15
+    validations:
+      required: true
+  - type: dropdown
+    id: integration
+    attributes:
+      label: BunkerWeb integration
+      options:
+        - Docker
+        - Autoconf
+        - Swarm
+        - Kubernetes
+        - Linux
+        - All-in-one
+        - Other / Not listed
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt
+      description: The prompt you gave the agent, and whether the agent announced the skill.
+      placeholder: The exact prompt.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      placeholder: What the agent should have done or said.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What the agent did instead. Redact hostnames, IP addresses and credentials from any transcript or log you paste.
+      placeholder: What it did, with the relevant part of the transcript.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow the project [Code of Conduct](https://github.com/bunkerity/bunkerweb-skills/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true

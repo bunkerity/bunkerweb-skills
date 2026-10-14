@@ -1,0 +1,20 @@
+# Tokens used by bunkerweb-migrate-modsecurity that are not BunkerWeb settings. One per line, source after the #.
+CUSTOM_CONF_SERVER_HTTP  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and bunkerweb.* label (src/autoconf/controllers/DockerController.py, docs/advanced.md)
+CUSTOM_CONF_MODSEC  # same pattern, MODSEC type (src/autoconf/controllers/DockerController.py)
+CUSTOM_CONF_MODSEC_CRS  # prefix of the <SERVICE>_CUSTOM_CONF_MODSEC_CRS_<NAME> scheduler env var (src/common/gen/save_config.py:23-24 at v1.6.15)
+BLOCKING_PARANOIA  # owasp/modsecurity-crs 4.x container env var, written into crs-setup.conf by /docker-entrypoint.d/95-configure-rules.sh (read in the image)
+DETECTION_PARANOIA  # same, rule 900001
+ANOMALY_INBOUND  # same, rule 900110
+ANOMALY_OUTBOUND  # same, rule 900110
+ALLOWED_REQUEST_CONTENT_TYPE  # same, rule 900220
+MODSEC_RULE_ENGINE  # owasp/modsecurity-crs container env var, becomes SecRuleEngine (image modsecurity.conf template)
+MODSEC_REQ_BODY_LIMIT  # same, SecRequestBodyLimit
+MODSEC_REQ_BODY_NOFILES_LIMIT  # same, SecRequestBodyNoFilesLimit
+SET_REAL_IP_FROM  # owasp/modsecurity-crs nginx image env var (92-update-real_ip.sh); BunkerWeb's REAL_IP_FROM is the counterpart
+BACKEND_WS  # owasp/modsecurity-crs Apache image env var for the websocket backend
+NGINX_ALWAYS_TLS_REDIRECT  # owasp/modsecurity-crs nginx image env var
+APACHE_ALWAYS_TLS_REDIRECT  # owasp/modsecurity-crs Apache image env var
+HSTS_MAX_AGE  # owasp/modsecurity-crs Apache image env var
+REMOTE_ADDR  # ModSecurity variable (client address), not a setting
+OWASP_CRS  # rule tag and version marker in the CRS files (ver:'OWASP_CRS/4.x.y')
+NO_FILES  # the NO_FILES part of BunkerWeb's MODSECURITY_REQ_BODY_NO_FILES_LIMIT, quoted in a naming comparison

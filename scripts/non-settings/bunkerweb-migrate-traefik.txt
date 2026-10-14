@@ -1,0 +1,11 @@
+# Tokens used by bunkerweb-migrate-traefik that are not BunkerWeb settings. One per line, source after the #.
+CUSTOM_CONF_SERVER_HTTP  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and bunkerweb.* label (src/autoconf/controllers/DockerController.py, docs/advanced.md)
+SERVER_HTTP  # custom config type in the CUSTOM_CONF_<TYPE>_<NAME> pattern (src/autoconf/controllers/DockerController.py)
+SERVER_STREAM  # custom config type, same regex
+MODSEC_CRS  # custom config type, same regex
+CRS_PLUGINS_BEFORE  # custom config type, same regex
+CRS_PLUGINS_AFTER  # custom config type, same regex
+DOCKER_HOST  # Docker client environment variable read by bw-autoconf (docs/integrations.md, Docker autoconf stack)
+CUSTOM_CONF  # prefix of the bunkerweb.CUSTOM_CONF_<TYPE>_<NAME> label (src/autoconf/controllers/DockerController.py, __custom_confs_rx)
+CUSTOM_CONF_MODSEC_CRS  # type part of the bunkerweb.CUSTOM_CONF_MODSEC_CRS_<NAME> label (src/autoconf/controllers/DockerController.py, __custom_confs_rx)
+REQUEST_URI  # ModSecurity variable inside the example SecRule, not a BunkerWeb setting

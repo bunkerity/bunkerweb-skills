@@ -1,0 +1,41 @@
+name: Validate skills
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  plumber:
+    uses: ./.github/workflows/plumber.yml
+    permissions:
+      contents: read
+      security-events: write
+      id-token: write
+
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Read pinned BunkerWeb release
+        id: pin
+        run: echo "ref=$(cat BUNKERWEB_REF)" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: bunkerity/bunkerweb
+          ref: ${{ steps.pin.outputs.ref }}
+          path: .bunkerweb
+          sparse-checkout: src/common
+          persist-credentials: false
+      - run: python3 scripts/validate.py
+      - run: python3 scripts/test_check_scan_hygiene.py
+      - run: python3 scripts/test_check_settings.py
+      - run: python3 scripts/check_scan_hygiene.py
+      - run: python3 scripts/check_settings.py --bunkerweb .bunkerweb

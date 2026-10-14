@@ -1,0 +1,20 @@
+BW_API_TOKEN  # Compose variable defined by skills/bunkerweb/references/{docker,autoconf}.md
+BW_HTTP_PORT  # Compose variable defined by skills/bunkerweb/references/{docker,all-in-one}.md
+BW_HTTPS_PORT  # Compose variable defined by skills/bunkerweb/references/{docker,all-in-one}.md
+BW_AUTO_LETS_ENCRYPT  # Compose variable defined by skills/bunkerweb/references/{docker,all-in-one}.md
+SERVICE_UI  # all-in-one container env, docs/integrations.md (All-In-One), src/all-in-one/entrypoint.sh
+SERVICE_API  # all-in-one container env, docs/integrations.md (All-In-One), src/all-in-one/entrypoint.sh
+SERVICE_SCHEDULER  # all-in-one container env, docs/integrations.md (All-In-One), src/all-in-one/entrypoint.sh
+HIDE_SERVICE_LOGS  # all-in-one container env, docs/integrations.md (All-In-One)
+API_USERNAME  # external API service env (SERVICE_API=yes), docs/integrations.md (All-In-One API Integration)
+API_PASSWORD  # external API service env (SERVICE_API=yes), docs/integrations.md (All-In-One API Integration)
+API_WHITELIST_IPS  # external API service env, src/api/app/config.py (differs from the instance setting API_WHITELIST_IP)
+DOCKER_IGNORE_LABELS  # bw-autoconf container env, docs/integrations.md (Docker autoconf), src/autoconf/controllers/DockerController.py
+AUTOCONF_DISABLE_CLEANUP  # bw-autoconf container env, docs/integrations.md (Docker autoconf)
+XDG_RUNTIME_DIR  # Docker rootless socket path, docs/integrations.md (Docker autoconf)
+MYSQL_RANDOM_ROOT_PASSWORD  # mariadb image env, docs/integrations.md (Docker autoconf)
+MYSQL_DATABASE  # mariadb image env, docs/integrations.md (Docker autoconf)
+MYSQL_USER  # mariadb image env, docs/integrations.md (Docker autoconf)
+MYSQL_PASSWORD  # mariadb image env, docs/integrations.md (Docker autoconf)
+CONFIG_SITE  # ConfigMap annotation bunkerweb.io/CONFIG_SITE, docs/integrations.md (Kubernetes)
+UI_WIZARD  # package install environment variable, docs/integrations.md (Linux)

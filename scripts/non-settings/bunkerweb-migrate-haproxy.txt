@@ -1,0 +1,3 @@
+# Tokens used by bunkerweb-migrate-haproxy that are not BunkerWeb settings. One per line, source after the #.
+CUSTOM_CONF_SERVER_HTTP  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and bunkerweb.* label (src/autoconf/controllers/DockerController.py, docs/advanced.md)
+CUSTOM_CONF_MODSEC_CRS  # prefix of the <SERVICE>_CUSTOM_CONF_MODSEC_CRS_<NAME> scheduler env var (src/common/gen/save_config.py:23-24 at v1.6.15)

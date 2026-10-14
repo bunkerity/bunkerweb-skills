@@ -1,0 +1,28 @@
+{
+  "name": "bunkerweb",
+  "version": "0.1.0",
+  "description": "Deploy and operate BunkerWeb: install, troubleshoot, tune ModSecurity and OWASP CRS, and migrate from nginx, Nginx Proxy Manager, SWAG, ingress-nginx, Traefik, Caddy, Apache httpd, HAProxy and standalone ModSecurity.",
+  "author": {
+    "name": "Bunkerity",
+    "url": "https://github.com/bunkerity"
+  },
+  "homepage": "https://www.bunkerweb.io",
+  "repository": "https://github.com/bunkerity/bunkerweb-skills",
+  "license": "MIT",
+  "keywords": [
+    "bunkerweb",
+    "waf",
+    "modsecurity",
+    "owasp-crs",
+    "reverse-proxy",
+    "nginx",
+    "security",
+    "nginx-proxy-manager",
+    "swag",
+    "ingress-nginx",
+    "traefik",
+    "caddy",
+    "apache",
+    "haproxy"
+  ]
+}

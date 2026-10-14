@@ -1,0 +1,3 @@
+# Tokens used by bunkerweb-migrate-nginx-proxy-manager that are not BunkerWeb settings. One per line, source after the #.
+CUSTOM_CONF_SERVER_HTTP  # prefix of the CUSTOM_CONF_<TYPE>_<NAME> env var and bunkerweb.* label (src/autoconf/controllers/DockerController.py, docs/advanced.md)
+QUERY_STRING  # ModSecurity variable used in the example SecRule (ModSecurity reference manual, not a BunkerWeb setting)

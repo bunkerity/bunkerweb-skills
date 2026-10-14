@@ -1,0 +1,9 @@
+extends: plumber:default
+version: "2.0"
+
+# No overrides. The only third-party actions this repository uses are
+# getplumber/plumber and ossf/scorecard-action, and plumber:default already
+# trusts both (`getplumber/*`, `ossf/*`). actions/* and github/* are
+# GitHub-owned. Add an exact `owner/repo` under
+# github.controls.githubActionMustComeFromAuthorizedSources.trustedGithubActions
+# only when a workflow starts using an action the default does not trust.

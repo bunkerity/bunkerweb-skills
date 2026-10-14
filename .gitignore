@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.mypy_cache/
+.cache/
+.venv/
+__pycache__/
+*.py[cod]
+# BunkerWeb src/common extracted at BUNKERWEB_REF for check_settings.py
+.bunkerweb/
+# claude plugin eval output
+evals/results/
