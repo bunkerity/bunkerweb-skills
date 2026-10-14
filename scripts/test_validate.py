@@ -103,6 +103,18 @@ def test_flow_mapping_in_other_fields_passes():
     assert code == 0, err
 
 
+def test_unclosed_double_quote_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", '"Use when X: y')})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "does not close" in err and "strict YAML" in err, err
+
+
+def test_unclosed_single_quote_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "'Use when X: y")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "does not close" in err and "strict YAML" in err, err
+
+
 def test_quoted_or_block_scalar_description_may_hold_colon_and_hash():
     for value in ('"Use when X: y #z"', "'Use when X: y #z'", ">\n  Use when X: y #z"):
         code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", value)})

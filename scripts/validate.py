@@ -31,7 +31,14 @@ def check_strict_yaml(directory, fields, fail):
     """The `skills` CLI reads `name` and `description` with a strict YAML parser; Claude Code is lenient about both."""
     for key in ("name", "description"):
         value = fields.get(key, "")
-        if value.startswith(('"', "'", "|", ">")):
+        if value.startswith(("|", ">")):
+            continue
+        if value.startswith(('"', "'")):
+            if len(value) < 2 or not value.endswith(value[0]):
+                fail(
+                    f"{directory.name}: frontmatter `{key}` opens a quote it does not close on the same line; "
+                    "strict YAML parsers such as the `skills` CLI skip the skill. Close the quote or keep the value on one line"
+                )
             continue
         if re.search(r":(\s|$)", value):
             fail(
