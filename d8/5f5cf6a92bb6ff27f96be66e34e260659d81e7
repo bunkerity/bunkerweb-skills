@@ -1,0 +1,21 @@
+scripts/test_validate.py
+  s_e7b56f255e485c::t_468c86f2d29f87 106-117
+scripts/validate.py
+  s_e7b56f255e485c::t_935f1b6d20d942 34-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d85f5cf6a92bb6ff27f96be66e34e260659d81e7",
+  "prompts": {},
+  "sessions": {
+    "s_e7b56f255e485c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f0b03a9c-c26e-4287-aeab-58c9400fa5f5",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    }
+  }
+}
