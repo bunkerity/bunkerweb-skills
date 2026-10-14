@@ -1,0 +1,882 @@
+skills/bunkerweb-migrate-nginx-proxy-manager/SKILL.md
+  s_d7906a37ab8181::t_ad8ba81886fbf9 49-88
+  s_16a38263500995::t_495b64ef1c53b3 1-48,89-103
+skills/bunkerweb-migrate-modsecurity/references/mapping.md
+  s_fd6f74ad7ef978::t_1b514fd20b45ce 5-43
+  s_81d168805a9b90::t_be788f4eabae9d 1-4,44-45
+skills/bunkerweb-troubleshooting/references/modules.md
+  s_fec91127e9330c::t_338c9235856690 1-71
+skills/bunkerweb/references/apps/vaultwarden.md
+  s_96250a78443c55::t_0ba4c1df4074e6 1-50
+  s_789dc0798f359c::t_070568b1579754 51-55
+skills/bunkerweb/references/apps/nextcloud.md
+  s_7ca0c6cf6f138b::t_78bf9ab4de8b69 3-36
+  s_e7bf1da52880f8::t_ded82386a4b7f8 1-2,37-38
+skills/bunkerweb-migrate-traefik/references/verified-live.md
+  s_956e1ef5aff334::t_192542bfcda1bd 3-74
+  s_69c38ef8a33378::t_50ff3e17285569 1-2
+skills/bunkerweb/references/apps/forgejo.md
+  s_96250a78443c55::t_4a1dabf6574a27 1-5,7,10-44,46-48,51-52,54,56-57
+  s_ff96e85f44ce4f::t_11aa2a0714fa95 55
+  s_96250a78443c55::t_2c5857c5bef2ed 6
+  s_96250a78443c55::t_173e77c6cce476 8-9
+  s_96250a78443c55::t_8ef5008c0459b1 45
+  s_96250a78443c55::t_0ea7ef27f239d0 49-50
+  s_96250a78443c55::t_cea272b9382bd1 53
+skills/bunkerweb/references/apps/paperless-ngx.md
+  s_96250a78443c55::t_9ce21a8175bfa3 1-42
+  s_7752702d53daf7::t_ef30e007ac7968 43-44
+skills/bunkerweb/references/apps/netbird.md
+  s_332cfdecd5c75a::t_a6e35572281c3d 1-45
+skills/bunkerweb-migrate-swag/references/mapping.md
+  s_e5626ca81afce0::t_b08867b68fdb6f 1-2,4-6,18-20,41-43,56-58
+  s_e5626ca81afce0::t_03129f4b92155b 3,7-17,21-40,44-55,59-68
+  s_7052d2a48af1ba::t_3b2955e4d5c39c 69-72
+evals/README.md
+  s_18ce5df04ee179::t_76089397eea616 1-142
+  s_768a8240dfda04::t_b736580e32f2f2 143-150
+skills/bunkerweb/SKILL.md
+  s_ad0f286dcdc004::t_afc3ff49f0a57a 1-93
+  s_16a38263500995::t_7cd6c5cbcd863a 94-98
+CONTRIBUTING.md
+  s_7752702d53daf7::t_869aa837b13f51 1-25,28-85
+  s_ff96e85f44ce4f::t_25796bddf6e19c 26-27
+skills/bunkerweb-migrate-swag/references/verified-live.md
+  s_e5626ca81afce0::t_be76ce4c4b7e91 3-57
+  s_7bbcdc34465d83::t_f5b7b121a1ac8e 1-2,58-112
+skills/bunkerweb/references/apps/home-assistant.md
+  s_332cfdecd5c75a::t_61228f571a76d2 1-44
+skills/bunkerweb/references/apps/drupal.md
+  s_9f61b6a9526003::t_e33b33fff5ca0a 1-31
+scripts/test_check_scan_hygiene.py
+  s_a0b61344df8c35::t_954a3088ebb669 1-128
+.claude-plugin/marketplace.json
+  s_23d0796c7b5858::t_12eb5c416706c2 1-18
+  s_956e1ef5aff334::t_2ae02f6f2a9c13 19-34
+skills/bunkerweb-migrate/SKILL.md
+  s_ff96e85f44ce4f::t_636a0300d52784 14
+  s_7ae8d542d7e4a4::t_bb32a136b40bd8 1-2,4-5,7-11,32-36,41-62,64,66-68,72
+  s_7bbcdc34465d83::t_ac4e7eb2ba7407 3,6,12-13,15-31,37-40,63,65,69-71,73-79
+skills/bunkerweb/references/apps/tuwunel.md
+  s_332cfdecd5c75a::t_80893daed4a6b4 1-49
+skills/bunkerweb-migrate-nginx-proxy-manager/references/verified-live.md
+  s_d7906a37ab8181::t_3c66e4c8d89062 74-75
+  s_d7906a37ab8181::t_f53c6055076288 3-73,76-82
+  s_7bbcdc34465d83::t_fbb616f2d9cde8 1-2,83-137
+skills/bunkerweb/references/apps/pi-hole.md
+  s_96250a78443c55::t_37f1344fd4ac40 3-43
+  s_7752702d53daf7::t_0588d11afac745 1-2
+.gitignore
+  s_23d0796c7b5858::t_5263b93c6a43f2 1-11
+scripts/check_scan_hygiene.py
+  s_a0b61344df8c35::t_cbebfedf603610 1-137
+  s_7752702d53daf7::t_78c5bba0fdb8a8 138-141
+.pre-commit-config.yaml
+  s_6884b5fa6a3c86::t_30356edc75b1e6 22
+  s_7bbcdc34465d83::t_68d21140ee6015 1-21,23-59
+skills/bunkerweb-migrate-traefik/references/mapping.md
+  s_956e1ef5aff334::t_3a71052f4a7825 3-97
+  s_956e1ef5aff334::t_aee6b785702f6e 1-2
+skills/bunkerweb-migrate-nginx-proxy-manager/references/mapping.md
+  s_d7906a37ab8181::t_4a0b909575ce41 3-42,45-92
+  s_d7906a37ab8181::t_11a90a76595563 43
+  s_16a38263500995::t_b135ac4b61bbae 1-2,44,93-98
+skills/bunkerweb/references/apps/directus.md
+  s_9f61b6a9526003::t_961e02b077f3b5 1-8,10-33
+  s_9f61b6a9526003::t_ab98799ec53cf3 9
+AGENTS.md
+  s_23d0796c7b5858::t_3b8a30f597d894 1-36
+skills/bunkerweb/references/apps/tomcat.md
+  s_9f61b6a9526003::t_e37858ad2feace 1-37
+  s_7752702d53daf7::t_d12b4f4b92854a 38
+.claude-plugin/plugin.json
+  s_23d0796c7b5858::t_d2546e58e92cde 1-13
+  s_956e1ef5aff334::t_631a816330dabb 14-28
+SECURITY.md
+  s_23d0796c7b5858::t_5c7bdeea24d021 1-21
+skills/bunkerweb/references/apps/wordpress.md
+  s_9f61b6a9526003::t_ddc197fcf6498a 3-46
+  s_7752702d53daf7::t_a3916868e1f20e 1-2
+README.md
+  s_7752702d53daf7::t_aab0881d60b909 1-82
+  s_956e1ef5aff334::t_1e7368724b9fbf 83-91
+skills/bunkerweb-migrate-caddy/references/verified-live.md
+  s_b7c310e6267f3d::t_556dbdc48f7944 3-75
+  s_768a8240dfda04::t_787ef2b236fd4f 1-2,76-117
+skills/bunkerweb/references/apps/synapse.md
+  s_332cfdecd5c75a::t_a764a26b85c121 3-53
+  s_7752702d53daf7::t_73e55730dc3111 1-2
+skills/bunkerweb-troubleshooting/SKILL.md
+  s_fec91127e9330c::t_c7eb4dd1541366 1-2,4-17,25-29,31-36,38-39,41-46,48-50,52-58,60-61,63-64,67,69-80,82-83,85-97
+  s_ff96e85f44ce4f::t_3f2e9877230136 30
+  s_e7bf1da52880f8::t_4ac65a8adca014 3,18-24,37,40,47,51,59,62,65-66,68,81,84,98-99
+scripts/test_validate.py
+  s_ff96e85f44ce4f::t_c85a4faeca7e9f 1-68
+  s_ff96e85f44ce4f::t_a34cfda1f354b2 69-76
+LICENSE
+  s_23d0796c7b5858::t_96ec7b3b3eed4c 1-21
+skills/bunkerweb/references/apps/xen-orchestra.md
+  s_96250a78443c55::t_cbf37bcad3b927 1-43
+skills/bunkerweb-modsecurity-crs-tuning/SKILL.md
+  s_ff96e85f44ce4f::t_44ec98d7d44f77 115-121
+  s_ff96e85f44ce4f::t_0904a650c980b5 122
+  s_768a8240dfda04::t_5daf7f162d57b6 1-114,123-177
+skills/bunkerweb-migrate-nginx/references/verified-live.md
+  s_91651a6d683e6f::t_42109e7168268e 3-18,20-54
+  s_91651a6d683e6f::t_dc63a2acba1aaf 19
+  s_7bbcdc34465d83::t_a6a2b9c71663e2 1-2,55-104
+.coderabbit.yaml
+  s_7752702d53daf7::t_3080c877f43225 1-235
+.gitattributes
+  s_23d0796c7b5858::t_b0876ec3fcf746 1
+.github/CODEOWNERS
+  s_7752702d53daf7::t_ac5f1bbeadf961 1-6
+.github/ISSUE_TEMPLATE/bug_report.yml
+  s_ad0f286dcdc004::t_524cd722657f61 1-96
+.github/ISSUE_TEMPLATE/config.yml
+  s_ad0f286dcdc004::t_2a91b8e02569d8 1-8
+.github/ISSUE_TEMPLATE/skill_request.yml
+  s_ad0f286dcdc004::t_8f79073e9da86d 1-57
+.github/PULL_REQUEST_TEMPLATE.md
+  s_ad0f286dcdc004::t_9130e39de20cfe 1-30
+.github/dependabot.yml
+  s_23d0796c7b5858::t_e5c77bc832dff1 1-16
+.github/plumber/README.md
+  s_ad0f286dcdc004::t_abf8c36a24279b 1-80
+.github/plumber/plumber.yaml
+  s_ad0f286dcdc004::t_2b565376632871 1-9
+.github/workflows/codeql.yml
+  s_ad0f286dcdc004::t_309af9faeeb862 1-41
+.github/workflows/plumber.yml
+  s_ad0f286dcdc004::t_45a9544f589c41 1-32
+.github/workflows/scorecards-analysis.yml
+  s_ad0f286dcdc004::t_c4668bb2e0daca 1-38
+.github/workflows/validate.yml
+  s_ad0f286dcdc004::t_d211a08a22bd83 1-41
+.prettierignore
+  s_23d0796c7b5858::t_04421d2f5e495d 1-5
+BUNKERWEB_REF
+  s_23d0796c7b5858::t_0362a04c6cbc6a 1
+CHANGELOG.md
+  s_789dc0798f359c::t_f82630a5e75d9b 1-22
+CLAUDE.md
+  s_23d0796c7b5858::t_f4b94127bdd90a 1
+CODE_OF_CONDUCT.md
+  s_ad0f286dcdc004::t_62e976e583af6e 1-129
+evals/crs-exclusion-not-loaded/graders/criteria.md
+  s_18ce5df04ee179::t_e01c67bbc88f70 1-11
+evals/crs-exclusion-not-loaded/graders/fired.md
+  s_18ce5df04ee179::t_0704e234687e68 1-9
+evals/crs-exclusion-not-loaded/prompt.md
+  s_18ce5df04ee179::t_35373eb3af7f2b 1-6
+evals/crs-negative/graders/criteria.md
+  s_18ce5df04ee179::t_cf994e00b8fb40 1-6
+evals/crs-negative/graders/not-fired.md
+  s_18ce5df04ee179::t_5cafb4238316df 1-11
+evals/crs-negative/prompt.md
+  s_18ce5df04ee179::t_5be1b9deecbcb5 1-6
+evals/crs-scoped-exclusion/graders/criteria.md
+  s_7752702d53daf7::t_3832a068535556 1-12
+evals/crs-scoped-exclusion/graders/fired.md
+  s_18ce5df04ee179::t_e7bf1024e04546 1-9
+evals/crs-scoped-exclusion/prompt.md
+  s_18ce5df04ee179::t_dea004a269f7f2 1-11
+evals/migrate-apache-vhost-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_c243d3a2f08c83 1-13
+evals/migrate-apache-vhost-part-1/graders/fired.md
+  s_956e1ef5aff334::t_3142575085b56e 1-9
+evals/migrate-apache-vhost-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_2e36a3fcb60dce 1-11
+evals/migrate-apache-vhost-part-1/prompt.md
+  s_956e1ef5aff334::t_5ab6d82e3bd6b8 1-24
+evals/migrate-apache-vhost-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_bd775ad0aea732 1-11
+evals/migrate-apache-vhost-part-2/graders/fired.md
+  s_956e1ef5aff334::t_009456786996ca 1-9
+evals/migrate-apache-vhost-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_7d4b9afdfdab1f 1-11
+evals/migrate-apache-vhost-part-2/prompt.md
+  s_956e1ef5aff334::t_57bd44fa2febd8 1-24
+evals/migrate-app-authentik/graders/criteria.md
+  s_7752702d53daf7::t_0a18837b964b1f 1-13
+evals/migrate-app-authentik/graders/fired.md
+  s_ff96e85f44ce4f::t_c51d9643c5efa6 1-9
+evals/migrate-app-authentik/prompt.md
+  s_96250a78443c55::t_0c967d6f091cb1 1-27
+evals/migrate-app-home-assistant-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_474bdf3c9adab2 1-13
+evals/migrate-app-home-assistant-part-1/graders/fired.md
+  s_956e1ef5aff334::t_c7e92d3431dcc2 1-9
+evals/migrate-app-home-assistant-part-1/prompt.md
+  s_956e1ef5aff334::t_4e5e2acdf3edd1 1-31
+evals/migrate-app-home-assistant-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_465733ef55f542 1-8
+evals/migrate-app-home-assistant-part-2/graders/fired.md
+  s_956e1ef5aff334::t_a50dbc91296156 1-9
+evals/migrate-app-home-assistant-part-2/prompt.md
+  s_956e1ef5aff334::t_14d85c9559ecad 1-31
+evals/migrate-app-nextcloud-part-1a/graders/criteria.md
+  s_e7bf1da52880f8::t_9ad30610ebf9c5 1-10
+evals/migrate-app-nextcloud-part-1a/graders/fired.md
+  s_956e1ef5aff334::t_9131847c8a3c22 1-9
+evals/migrate-app-nextcloud-part-1a/prompt.md
+  s_956e1ef5aff334::t_7c709c2459d4dd 1-25
+evals/migrate-app-nextcloud-part-1b/graders/criteria.md
+  s_e7bf1da52880f8::t_02e2a12c2578c6 1-10
+evals/migrate-app-nextcloud-part-1b/graders/fired.md
+  s_956e1ef5aff334::t_6069d3441b2f50 1-9
+evals/migrate-app-nextcloud-part-1b/prompt.md
+  s_956e1ef5aff334::t_61e472e7628da9 1-25
+evals/migrate-app-nextcloud-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_33cb78f4999241 1-8
+evals/migrate-app-nextcloud-part-2/graders/fired.md
+  s_956e1ef5aff334::t_f6cc429bc3d23f 1-9
+evals/migrate-app-nextcloud-part-2/prompt.md
+  s_956e1ef5aff334::t_125c2646278d9b 1-25
+evals/migrate-app-vaultwarden-part-1/graders/criteria.md
+  s_16a38263500995::t_e45cb2ea845f06 1-13
+evals/migrate-app-vaultwarden-part-1/graders/fired.md
+  s_956e1ef5aff334::t_b3fa9dce8239d6 1-9
+evals/migrate-app-vaultwarden-part-1/prompt.md
+  s_956e1ef5aff334::t_e3bebc880fcbe0 1-27
+evals/migrate-app-vaultwarden-part-2/graders/criteria.md
+  s_789dc0798f359c::t_d04d68a7337f94 1-8
+evals/migrate-app-vaultwarden-part-2/graders/fired.md
+  s_956e1ef5aff334::t_232ef8fac10260 1-9
+evals/migrate-app-vaultwarden-part-2/prompt.md
+  s_956e1ef5aff334::t_c3e7784b6d14dd 1-27
+evals/migrate-app-vaultwarden-part-3/graders/criteria.md
+  s_789dc0798f359c::t_aff4b74e89b6ff 1-8
+evals/migrate-app-vaultwarden-part-3/graders/fired.md
+  s_789dc0798f359c::t_69471a77f409a6 1-9
+evals/migrate-app-vaultwarden-part-3/prompt.md
+  s_789dc0798f359c::t_f77c33437d93ea 1-27
+evals/migrate-app-wordpress-a/graders/criteria.md
+  s_e7bf1da52880f8::t_7d2689e839ab56 1-10
+evals/migrate-app-wordpress-a/graders/fired.md
+  s_ff96e85f44ce4f::t_0b8c771a300b43 1-9
+evals/migrate-app-wordpress-a/prompt.md
+  s_9f61b6a9526003::t_3a8a24bc50df0b 1-20
+evals/migrate-app-wordpress-b/graders/criteria.md
+  s_e7bf1da52880f8::t_b683145b0db59d 1-10
+evals/migrate-app-wordpress-b/graders/fired.md
+  s_ff96e85f44ce4f::t_03aa47b62d3a11 1-9
+evals/migrate-app-wordpress-b/prompt.md
+  s_9f61b6a9526003::t_7e99864d8ac16d 1-20
+evals/migrate-caddy-caddyfile-part-1/graders/criteria.md
+  s_4600783926e6d7::t_e3ac655322f8e9 1-13
+evals/migrate-caddy-caddyfile-part-1/graders/fired.md
+  s_b7c310e6267f3d::t_ee97f8706d01b0 1-9
+evals/migrate-caddy-caddyfile-part-1/graders/not-fired.md
+  s_b7c310e6267f3d::t_19c00e62aaf71e 1-11
+evals/migrate-caddy-caddyfile-part-1/prompt.md
+  s_b7c310e6267f3d::t_171f283a112430 1-36
+evals/migrate-caddy-caddyfile-part-2/graders/criteria.md
+  s_92d7b2d9e0d6be::t_3c27f49b76964c 1-11
+evals/migrate-caddy-caddyfile-part-2/graders/fired.md
+  s_b7c310e6267f3d::t_7687a33fac54c4 1-9
+evals/migrate-caddy-caddyfile-part-2/graders/not-fired.md
+  s_b7c310e6267f3d::t_d373a84f1ba09f 1-11
+evals/migrate-caddy-caddyfile-part-2/prompt.md
+  s_b7c310e6267f3d::t_f8b4ded30cca44 1-36
+evals/migrate-fallback-envoy/graders/criteria.md
+  s_ff96e85f44ce4f::t_62269f4d8affd4 1-13
+evals/migrate-fallback-envoy/graders/fired.md
+  s_ff96e85f44ce4f::t_c618d605a0f10d 1-9
+evals/migrate-fallback-envoy/graders/not-fired.md
+  s_ff96e85f44ce4f::t_35ab0dc9a5b1da 1-11
+evals/migrate-fallback-envoy/prompt.md
+  s_ff96e85f44ce4f::t_bd0db95605f16d 1-54
+evals/migrate-haproxy-cfg-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_d77d2a3ed97b66 1-13
+evals/migrate-haproxy-cfg-part-1/graders/fired.md
+  s_956e1ef5aff334::t_99e027c49e835a 1-9
+evals/migrate-haproxy-cfg-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_54c60f20c65001 1-11
+evals/migrate-haproxy-cfg-part-1/prompt.md
+  s_956e1ef5aff334::t_2a750ed0073f5c 1-39
+evals/migrate-haproxy-cfg-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_416c1cab50dfb7 1-11
+evals/migrate-haproxy-cfg-part-2/graders/fired.md
+  s_956e1ef5aff334::t_386862c3678f7a 1-9
+evals/migrate-haproxy-cfg-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_28d0ce2410f811 1-11
+evals/migrate-haproxy-cfg-part-2/prompt.md
+  s_956e1ef5aff334::t_d7e336f9d1d28d 1-39
+evals/migrate-ingress-nginx-annotations-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_5a254bc646970a 1-13
+evals/migrate-ingress-nginx-annotations-part-1/graders/fired.md
+  s_956e1ef5aff334::t_f60212bf8a6be6 1-9
+evals/migrate-ingress-nginx-annotations-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_33485c63111ba7 1-11
+evals/migrate-ingress-nginx-annotations-part-1/prompt.md
+  s_956e1ef5aff334::t_07d50396f89431 1-34
+evals/migrate-ingress-nginx-annotations-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_4d045ee01952d9 1-12
+evals/migrate-ingress-nginx-annotations-part-2/graders/fired.md
+  s_956e1ef5aff334::t_0746ea33b17d46 1-9
+evals/migrate-ingress-nginx-annotations-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_1a322b0a1609c5 1-11
+evals/migrate-ingress-nginx-annotations-part-2/prompt.md
+  s_956e1ef5aff334::t_5001f8d1a5a515 1-34
+evals/migrate-modsecurity-crs-exclusions-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_d6768aa4a493e5 1-13
+evals/migrate-modsecurity-crs-exclusions-part-1/graders/fired.md
+  s_956e1ef5aff334::t_d6e7cfa1d4bd69 1-9
+evals/migrate-modsecurity-crs-exclusions-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_52bb62841b16cd 1-11
+evals/migrate-modsecurity-crs-exclusions-part-1/prompt.md
+  s_956e1ef5aff334::t_6674e5a8eaad22 1-28
+evals/migrate-modsecurity-crs-exclusions-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_8c0ee18effa486 1-10
+evals/migrate-modsecurity-crs-exclusions-part-2/graders/fired.md
+  s_956e1ef5aff334::t_68bedb3f1d0837 1-9
+evals/migrate-modsecurity-crs-exclusions-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_af2ebece26f261 1-11
+evals/migrate-modsecurity-crs-exclusions-part-2/prompt.md
+  s_956e1ef5aff334::t_be6e3e6951105a 1-28
+evals/migrate-negative/graders/criteria.md
+  s_7ae8d542d7e4a4::t_4669296628b285 1-9
+evals/migrate-negative/graders/not-fired.md
+  s_7ae8d542d7e4a4::t_71062b0d40f873 1-11
+evals/migrate-negative/prompt.md
+  s_7ae8d542d7e4a4::t_556ad87859f823 1-6
+evals/migrate-nginx-conf-part-1a/graders/criteria.md
+  s_e7bf1da52880f8::t_714e98ba8a8348 1-10
+evals/migrate-nginx-conf-part-1a/graders/fired.md
+  s_956e1ef5aff334::t_864c0f9ad9fc7e 1-9
+evals/migrate-nginx-conf-part-1a/graders/not-fired.md
+  s_956e1ef5aff334::t_aec6091cef1664 1-11
+evals/migrate-nginx-conf-part-1a/prompt.md
+  s_956e1ef5aff334::t_09d055b8dd5906 1-44
+evals/migrate-nginx-conf-part-1b/graders/criteria.md
+  s_e7bf1da52880f8::t_16313016bbb8f4 1-10
+evals/migrate-nginx-conf-part-1b/graders/fired.md
+  s_956e1ef5aff334::t_fabdad90387f95 1-9
+evals/migrate-nginx-conf-part-1b/graders/not-fired.md
+  s_956e1ef5aff334::t_e7fa16069cc821 1-11
+evals/migrate-nginx-conf-part-1b/prompt.md
+  s_956e1ef5aff334::t_d545075f64ada6 1-44
+evals/migrate-nginx-conf-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_8e4870c064ec5d 1-12
+evals/migrate-nginx-conf-part-2/graders/fired.md
+  s_956e1ef5aff334::t_b8cba974184db7 1-9
+evals/migrate-nginx-conf-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_987461b94003f3 1-11
+evals/migrate-nginx-conf-part-2/prompt.md
+  s_956e1ef5aff334::t_a56428bfbb3d8f 1-44
+evals/migrate-nginx-proxy-manager-access-list-part-1/graders/criteria.md
+  s_7bbcdc34465d83::t_2f6ca64b8995cc 1-13
+evals/migrate-nginx-proxy-manager-access-list-part-1/graders/fired.md
+  s_956e1ef5aff334::t_29eb75ae1b78dc 1-9
+evals/migrate-nginx-proxy-manager-access-list-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_95c24bf8a85818 1-11
+evals/migrate-nginx-proxy-manager-access-list-part-1/prompt.md
+  s_956e1ef5aff334::t_8fa04dc54f6d04 1-14
+evals/migrate-nginx-proxy-manager-access-list-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_7c128fbfddc6fb 1-10
+evals/migrate-nginx-proxy-manager-access-list-part-2/graders/fired.md
+  s_956e1ef5aff334::t_c00b9c68cd828d 1-9
+evals/migrate-nginx-proxy-manager-access-list-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_90401eac688cce 1-11
+evals/migrate-nginx-proxy-manager-access-list-part-2/prompt.md
+  s_956e1ef5aff334::t_caac8c0f309c31 1-14
+evals/migrate-nginx-proxy-manager-part-1/graders/criteria.md
+  s_956e1ef5aff334::t_ba790293a25123 1-13
+evals/migrate-nginx-proxy-manager-part-1/graders/fired.md
+  s_956e1ef5aff334::t_117a58510956fb 1-9
+evals/migrate-nginx-proxy-manager-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_08d6a5c7d7f535 1-11
+evals/migrate-nginx-proxy-manager-part-1/prompt.md
+  s_956e1ef5aff334::t_24080ac01f71ba 1-6
+evals/migrate-nginx-proxy-manager-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_f7d00ff297415b 1-10
+evals/migrate-nginx-proxy-manager-part-2/graders/fired.md
+  s_956e1ef5aff334::t_ba921132e4f559 1-9
+evals/migrate-nginx-proxy-manager-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_bff298f3a5c642 1-11
+evals/migrate-nginx-proxy-manager-part-2/prompt.md
+  s_956e1ef5aff334::t_41bde15b59a391 1-6
+evals/migrate-swag-subdomain-conf-part-1a/graders/criteria.md
+  s_e7bf1da52880f8::t_f1069afb9bfda9 1-10
+evals/migrate-swag-subdomain-conf-part-1a/graders/fired.md
+  s_956e1ef5aff334::t_02360b04704889 1-9
+evals/migrate-swag-subdomain-conf-part-1a/graders/not-fired.md
+  s_956e1ef5aff334::t_c2924516a51667 1-11
+evals/migrate-swag-subdomain-conf-part-1a/prompt.md
+  s_956e1ef5aff334::t_f2196fa53982d2 1-43
+evals/migrate-swag-subdomain-conf-part-1b/graders/criteria.md
+  s_e7bf1da52880f8::t_b0a2b2dde5172f 1-10
+evals/migrate-swag-subdomain-conf-part-1b/graders/fired.md
+  s_956e1ef5aff334::t_ae1e9170e8dff4 1-9
+evals/migrate-swag-subdomain-conf-part-1b/graders/not-fired.md
+  s_956e1ef5aff334::t_4edb5e9222a0ab 1-11
+evals/migrate-swag-subdomain-conf-part-1b/prompt.md
+  s_956e1ef5aff334::t_67f12a876ea4ae 1-43
+evals/migrate-swag-subdomain-conf-part-2/graders/criteria.md
+  s_956e1ef5aff334::t_b8c30eec88178d 1-11
+evals/migrate-swag-subdomain-conf-part-2/graders/fired.md
+  s_956e1ef5aff334::t_dc28f3f29ca19c 1-9
+evals/migrate-swag-subdomain-conf-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_07878359d18831 1-11
+evals/migrate-swag-subdomain-conf-part-2/prompt.md
+  s_956e1ef5aff334::t_5c683ec1f5e3ad 1-43
+evals/migrate-traefik-labels-part-1/graders/criteria.md
+  s_92d7b2d9e0d6be::t_4b43d87932890f 1-13
+evals/migrate-traefik-labels-part-1/graders/fired.md
+  s_ff96e85f44ce4f::t_746e5d6629e37b 1-9
+evals/migrate-traefik-labels-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_1313db4aab54ee 1-11
+evals/migrate-traefik-labels-part-1/prompt.md
+  s_7ae8d542d7e4a4::t_b7f05ac3bb7189 1-12
+evals/migrate-traefik-labels-part-2/graders/criteria.md
+  s_92d7b2d9e0d6be::t_7ed8bb4439eec7 1-13
+evals/migrate-traefik-labels-part-2/graders/fired.md
+  s_ff96e85f44ce4f::t_9d44eb1cb54c84 1-9
+evals/migrate-traefik-labels-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_a7c0526569e109 1-11
+evals/migrate-traefik-labels-part-2/prompt.md
+  s_7ae8d542d7e4a4::t_3f79db6890c48b 1-12
+evals/migrate-traefik-middlewares-part-1/graders/criteria.md
+  s_92d7b2d9e0d6be::t_fa518ff474546a 1-13
+evals/migrate-traefik-middlewares-part-1/graders/fired.md
+  s_956e1ef5aff334::t_73eddbe3ffe022 1-9
+evals/migrate-traefik-middlewares-part-1/graders/not-fired.md
+  s_956e1ef5aff334::t_9b44c1c24a71ed 1-11
+evals/migrate-traefik-middlewares-part-1/prompt.md
+  s_956e1ef5aff334::t_09792fe5785e9f 1-26
+evals/migrate-traefik-middlewares-part-2/graders/criteria.md
+  s_92d7b2d9e0d6be::t_f5cba6c99da99f 1-9
+evals/migrate-traefik-middlewares-part-2/graders/fired.md
+  s_956e1ef5aff334::t_7ed219f3cbe2af 1-9
+evals/migrate-traefik-middlewares-part-2/graders/not-fired.md
+  s_956e1ef5aff334::t_dd56b813686b30 1-11
+evals/migrate-traefik-middlewares-part-2/prompt.md
+  s_956e1ef5aff334::t_6c6171ec9e7f78 1-26
+evals/router-docker-reverse-proxy/graders/criteria.md
+  s_ad0f286dcdc004::t_6893763b4f3579 1-14
+evals/router-docker-reverse-proxy/graders/fired.md
+  s_ad0f286dcdc004::t_9dd0a1f92346c8 1-9
+evals/router-docker-reverse-proxy/prompt.md
+  s_ad0f286dcdc004::t_3cb38fe4ec8bec 1-6
+evals/router-kubernetes-ingress/graders/criteria.md
+  s_ad0f286dcdc004::t_86cd0f06129afd 1-13
+evals/router-kubernetes-ingress/graders/fired.md
+  s_ad0f286dcdc004::t_33bb5c13c7f85a 1-9
+evals/router-kubernetes-ingress/prompt.md
+  s_ad0f286dcdc004::t_568e10e68df1bd 1-6
+evals/router-negative/graders/criteria.md
+  s_ad0f286dcdc004::t_4b328f5cfd0d03 1-9
+evals/router-negative/graders/not-fired.md
+  s_ad0f286dcdc004::t_a41cc86582916b 1-11
+evals/router-negative/prompt.md
+  s_ad0f286dcdc004::t_0b4f17117af577 1-6
+evals/router-newer-version-a/graders/criteria.md
+  s_e7bf1da52880f8::t_bbd8accf2e236c 1-9
+evals/router-newer-version-a/graders/fired.md
+  s_ad0f286dcdc004::t_2950d611bb52ff 1-9
+evals/router-newer-version-a/prompt.md
+  s_ad0f286dcdc004::t_de2d6f14357d16 1-6
+evals/router-newer-version-b/graders/criteria.md
+  s_e7bf1da52880f8::t_47431530d49622 1-9
+evals/router-newer-version-b/graders/fired.md
+  s_ad0f286dcdc004::t_08e67f9aeded71 1-9
+evals/router-newer-version-b/prompt.md
+  s_ad0f286dcdc004::t_e672dc82a95bb6 1-6
+evals/router-old-version/graders/fired.md
+  s_ad0f286dcdc004::t_8e615b47e67913 1-9
+evals/router-old-version/prompt.md
+  s_ad0f286dcdc004::t_2b6542008353a8 1-6
+evals/troubleshooting-banned/graders/criteria.md
+  s_4dd359a56f7a38::t_bc9f2a60bc7da6 1-14
+evals/troubleshooting-banned/graders/fired.md
+  s_fec91127e9330c::t_1604484e62415e 1-9
+evals/troubleshooting-banned/prompt.md
+  s_fec91127e9330c::t_7130c1d156b9f2 1-6
+evals/troubleshooting-modsec-403/graders/criteria.md
+  s_4dd359a56f7a38::t_3b400af81cdd8e 1-11
+evals/troubleshooting-modsec-403/graders/fired.md
+  s_fec91127e9330c::t_ef0125455606ff 1-9
+evals/troubleshooting-modsec-403/prompt.md
+  s_fec91127e9330c::t_039e6773df57e2 1-11
+evals/troubleshooting-negative/graders/criteria.md
+  s_fec91127e9330c::t_c5b6be2bbdc7ab 1-6
+evals/troubleshooting-negative/graders/not-fired.md
+  s_fec91127e9330c::t_5d434072a39282 1-11
+evals/troubleshooting-negative/prompt.md
+  s_fec91127e9330c::t_94b1dce8017ef7 1-6
+evals/troubleshooting-not-applied/graders/criteria.md
+  s_4dd359a56f7a38::t_5a5d39a935dab5 1-12
+evals/troubleshooting-not-applied/graders/fired.md
+  s_fec91127e9330c::t_feee2b34840e8f 1-9
+evals/troubleshooting-not-applied/prompt.md
+  s_fec91127e9330c::t_3514f15ad4dc83 1-6
+scripts/check_settings.py
+  s_a0b61344df8c35::t_f3eb895fbcd3d3 1-63
+scripts/non-settings/apps-a.txt
+  s_7ca0c6cf6f138b::t_d5cbf2c50dd6ff 1-9
+scripts/non-settings/apps-b.txt
+  s_9f61b6a9526003::t_48dcd2b087dfe2 1-4
+scripts/non-settings/apps-c.txt
+  s_332cfdecd5c75a::t_36e349e7a32a50 1
+scripts/non-settings/apps-d.txt
+  s_96250a78443c55::t_c270d333a06009 1-4
+scripts/non-settings/apps-e.txt
+  s_96250a78443c55::t_7d9ec81f4d9230 1-8
+scripts/non-settings/bunkerweb-migrate-apache.txt
+  s_ff96e85f44ce4f::t_c4e74d4476cc9a 1-4
+scripts/non-settings/bunkerweb-migrate-caddy.txt
+  s_ff96e85f44ce4f::t_33b48207134806 1-2
+scripts/non-settings/bunkerweb-migrate-haproxy.txt
+  s_ff96e85f44ce4f::t_85a4257c945163 1-3
+scripts/non-settings/bunkerweb-migrate-ingress-nginx.txt
+  s_fd6f74ad7ef978::t_ec339801ee717e 1-3
+scripts/non-settings/bunkerweb-migrate-modsecurity.txt
+  s_d7906a37ab8181::t_6876e60efdd264 1-20
+scripts/non-settings/bunkerweb-migrate-nginx-proxy-manager.txt
+  s_d7906a37ab8181::t_d32e7bc3254a5f 1-3
+scripts/non-settings/bunkerweb-migrate-nginx.txt
+  s_91651a6d683e6f::t_da017eaf86ceaa 1-3
+scripts/non-settings/bunkerweb-migrate-swag.txt
+  s_e5626ca81afce0::t_4e1db9f006bc13 1-4
+scripts/non-settings/bunkerweb-migrate-traefik.txt
+  s_d7906a37ab8181::t_5a9ab988fc2e93 1-11
+scripts/non-settings/bunkerweb-migrate.txt
+  s_ff96e85f44ce4f::t_67efe3d0674978 1-10
+scripts/non-settings/bunkerweb-modsecurity-crs-tuning.txt
+  s_18ce5df04ee179::t_a67a58ca7beea2 1-5
+scripts/non-settings/bunkerweb-troubleshooting.txt
+  s_fec91127e9330c::t_b0906bf6e0f9cc 1
+scripts/non-settings/bunkerweb.txt
+  s_ad0f286dcdc004::t_1c4787fcd31374 1-20
+scripts/non-settings/common.txt
+  s_66ebbdea53c149::t_813fd949b5a93a 1-2
+scripts/test_check_settings.py
+  s_a0b61344df8c35::t_40e774665997ed 1-49
+scripts/validate.py
+  s_ff96e85f44ce4f::t_e440ab457de161 1-112
+skills/bunkerweb-migrate-apache/SKILL.md
+  s_7bbcdc34465d83::t_2408a596d65b5a 1-76
+skills/bunkerweb-migrate-apache/references/mapping.md
+  s_eb66663027c830::t_4bfcbc8b89bdd6 1-41
+skills/bunkerweb-migrate-apache/references/verified-live.md
+  s_ff96e85f44ce4f::t_f0a56f832646ef 1-24
+skills/bunkerweb-migrate-caddy/SKILL.md
+  s_768a8240dfda04::t_9b05bf57e7420e 1-92
+skills/bunkerweb-migrate-caddy/references/mapping.md
+  s_7052d2a48af1ba::t_de1326c7ed2493 1-42
+skills/bunkerweb-migrate-haproxy/SKILL.md
+  s_7bbcdc34465d83::t_3ed39dfc2df665 1-76
+skills/bunkerweb-migrate-haproxy/references/mapping.md
+  s_4600783926e6d7::t_1cb1f68b2eb794 1-40
+skills/bunkerweb-migrate-haproxy/references/verified-live.md
+  s_ff96e85f44ce4f::t_1190b218d81c4c 1-27
+skills/bunkerweb-migrate-ingress-nginx/SKILL.md
+  s_7bbcdc34465d83::t_b141688e8e2a5f 1-97
+skills/bunkerweb-migrate-ingress-nginx/references/mapping.md
+  s_768a8240dfda04::t_9b6a8bfdaebf5e 1-141
+skills/bunkerweb-migrate-ingress-nginx/references/verified-live.md
+  s_e5626ca81afce0::t_fb3f4ca055ec7c 1-76
+skills/bunkerweb-migrate-modsecurity/SKILL.md
+  s_81d168805a9b90::t_8c3b934df6e5d4 1-89
+skills/bunkerweb-migrate-modsecurity/references/verified-live.md
+  s_fd6f74ad7ef978::t_b036a5b134f26c 1-157
+skills/bunkerweb-migrate-nginx/SKILL.md
+  s_81d168805a9b90::t_67d3af378ec77a 1-86
+skills/bunkerweb-migrate-nginx/references/mapping.md
+  s_16a38263500995::t_90ada55ae482f4 1-51
+skills/bunkerweb-migrate-swag/SKILL.md
+  s_7bbcdc34465d83::t_6b2c740b0a166a 1-82
+skills/bunkerweb-migrate-traefik/SKILL.md
+  s_7bbcdc34465d83::t_8101d43e771303 1-92
+skills/bunkerweb-modsecurity-crs-tuning/reference.md
+  s_18ce5df04ee179::t_76b9e0f954426e 1-104
+skills/bunkerweb/references/all-in-one.md
+  s_7752702d53daf7::t_71360e094ad255 1-115
+skills/bunkerweb/references/apps/authentik.md
+  s_81d168805a9b90::t_8754b911864a0b 1-40
+skills/bunkerweb/references/apps/grafana.md
+  s_7752702d53daf7::t_f47404832f94c9 1-37
+skills/bunkerweb/references/apps/immich.md
+  s_7752702d53daf7::t_07210e477502ff 1-28
+skills/bunkerweb/references/apps/jellyfin.md
+  s_7752702d53daf7::t_8c2757d5a8ab81 1-44
+skills/bunkerweb/references/apps/keycloak.md
+  s_7752702d53daf7::t_4f4fad756a3ff8 1-34
+skills/bunkerweb/references/apps/seafile.md
+  s_7752702d53daf7::t_4a53580405040f 1-38
+skills/bunkerweb/references/apps/uptime-kuma.md
+  s_96250a78443c55::t_a42c9a108126f5 1-30
+skills/bunkerweb/references/autoconf.md
+  s_7752702d53daf7::t_e93ff4865e96f6 1-186
+skills/bunkerweb/references/docker.md
+  s_7752702d53daf7::t_051ab8b4e6da11 1-210
+skills/bunkerweb/references/kubernetes.md
+  s_956e1ef5aff334::t_4be8cb669d57aa 1-137
+skills/bunkerweb/references/linux.md
+  s_7752702d53daf7::t_8d8bd020866d4b 1-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c6434835d386ebc7349937cb209aeb8f9eb0a4f7",
+  "prompts": {},
+  "sessions": {
+    "s_16a38263500995": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57971e65-61cd-446c-bf26-afba5ef35637",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_18ce5df04ee179": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "184abac0-c438-4464-aa65-2348fabc415f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_23d0796c7b5858": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cdf5b531-1294-4d1c-9af5-c62e35d2e055",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_332cfdecd5c75a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a1dea83f-dcba-4228-b9f7-5b7b69f6a9d4",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_4600783926e6d7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "577228b8-9e99-4afb-b5b7-0fab1e1a53d0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_4dd359a56f7a38": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "05cd9ad2-0bc0-422a-8de6-8069993e6c7c",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_66ebbdea53c149": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9d58c777-c8da-4d7e-8859-2bb44d73eced",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_6884b5fa6a3c86": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8896f543-5c1f-462b-9353-d281fdb55ebb",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_69c38ef8a33378": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9f79b-f54e-46d5-957e-2ccc8a6835a4",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_7052d2a48af1ba": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a111bb-3d37-7090-9012-0359bee6833d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_768a8240dfda04": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a13577-ff1b-7d83-99cb-923ecafba4a5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_7752702d53daf7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b63b2047-994a-4723-a7ff-241a87df4cc7",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_789dc0798f359c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26180d38-44fe-49b1-9ba4-a252752394bf",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_7ae8d542d7e4a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b96de22c-2bd1-421d-b9a2-101f1565a88c",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_7bbcdc34465d83": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a111cb-f63f-7e53-8c52-af10db6adddc",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_7ca0c6cf6f138b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "42515743-2421-4506-8c59-119a45f16ea1",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_81d168805a9b90": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0b138c08-fbc1-4055-8958-cff53167dff1",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_91651a6d683e6f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "883386da-4781-4a26-9391-e8b45abdd56f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_92d7b2d9e0d6be": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6ef34621-bda9-4883-9f5f-170e7c9d39c0",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_956e1ef5aff334": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8b735eb4-54e0-4f4d-bfa0-a4023c0f4332",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_96250a78443c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11b1c89b-f328-462d-b353-364e6a2e0fd4",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_9f61b6a9526003": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f7efd9ca-1163-42c5-8c13-b53572b7f0d2",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_a0b61344df8c35": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6f82a540-ce16-477f-a406-2677d2a21424",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_ad0f286dcdc004": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a64a5657-3127-4444-a5a9-2dad9d71b783",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_b7c310e6267f3d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3992260a-19b5-4f62-b598-6c55441f4ab1",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_d7906a37ab8181": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c6355d2-e806-4150-809b-07ac2d2689ad",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_e5626ca81afce0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21065fb8-688a-4666-81d9-449c847dd029",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_e7bf1da52880f8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "03db95eb-9204-43d3-baf7-2e8f395ecbeb",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_eb66663027c830": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a111a9-1a56-7953-a2ae-223e7c105039",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_fd6f74ad7ef978": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "823b0398-ee56-42a2-9478-8927bb26d090",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_fec91127e9330c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "70b7ce87-ca8b-4bbf-a4bd-66e68f108533",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    },
+    "s_ff96e85f44ce4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16be1817-fb96-4a25-9595-8adf1618572d",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "TheophileDiot <tdiot@bunkerity.com>"
+    }
+  }
+}
