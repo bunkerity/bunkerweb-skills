@@ -4,6 +4,8 @@ All notable updates to the skill collection live here. Keep the newest entries a
 
 ## Unreleased
 
+- [@TheophileDiot] Make every `SKILL.md` frontmatter strict YAML so the `skills` CLI no longer skips three skills (reword the `: ` in the `bunkerweb`, ingress-nginx and ModSecurity migration descriptions), and make `scripts/validate.py` reject an unquoted frontmatter value holding `: ` or ` #`.
+
 - [@TheophileDiot] Name the JSON-body target the log shows instead of a wildcard in the Vaultwarden note, ask its answers for a one-line exclusion scope, and move the certificate condition of the Vaultwarden eval into its own case.
 - [@TheophileDiot] Point the nginx migration skill at the per-app notes, give the authentik and Vaultwarden notes answer checklists (error bodies, methods, the `413` limit, the detect-first order with the ban reason), and require ModSecurity custom configs to be written out with their path and full text.
 

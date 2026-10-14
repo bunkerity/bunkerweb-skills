@@ -35,6 +35,7 @@ jobs:
           sparse-checkout: src/common
           persist-credentials: false
       - run: python3 scripts/validate.py
+      - run: python3 scripts/test_validate.py
       - run: python3 scripts/test_check_scan_hygiene.py
       - run: python3 scripts/test_check_settings.py
       - run: python3 scripts/check_scan_hygiene.py
