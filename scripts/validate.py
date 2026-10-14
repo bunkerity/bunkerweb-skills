@@ -27,6 +27,31 @@ def frontmatter(text):
     return fields
 
 
+def check_strict_yaml(directory, fields, fail):
+    """The `skills` CLI reads `name` and `description` with a strict YAML parser; Claude Code is lenient about both."""
+    for key in ("name", "description"):
+        value = fields.get(key, "")
+        if value.startswith(("|", ">")):
+            continue
+        if value.startswith(('"', "'")):
+            if len(value) < 2 or not value.endswith(value[0]):
+                fail(
+                    f"{directory.name}: frontmatter `{key}` opens a quote it does not close on the same line; "
+                    "strict YAML parsers such as the `skills` CLI skip the skill. Close the quote or keep the value on one line"
+                )
+            continue
+        if re.search(r":(\s|$)", value):
+            fail(
+                f"{directory.name}: frontmatter `{key}` holds a `:` followed by a space, tab or the end of the value in an unquoted value; "
+                "strict YAML parsers such as the `skills` CLI skip the skill. Reword the value or quote it"
+            )
+        if re.search(r"\s#", value):
+            fail(
+                f"{directory.name}: frontmatter `{key}` holds ` #` in an unquoted value; YAML reads it as the start of a comment, "
+                "so the value is silently truncated there. Reword the value or quote it"
+            )
+
+
 def check_skill(directory, fail):
     skill_md = directory / "SKILL.md"
     if not skill_md.is_file():
@@ -35,6 +60,8 @@ def check_skill(directory, fail):
     fields = frontmatter(skill_md.read_text(encoding="utf-8"))
     if fields is None:
         return fail(f"{directory.name}: SKILL.md has no `---` frontmatter block")
+
+    check_strict_yaml(directory, fields, fail)
 
     name = fields.get("name", "")
     if name != directory.name:

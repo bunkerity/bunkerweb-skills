@@ -68,6 +68,59 @@ def test_two_start_markers_fail():
     assert "bunkerweb-migrate-nginx" in err and "marker" in err, err
 
 
+def with_description(name, description):
+    return skill(name).replace(f"description: test skill {name}", f"description: {description}")
+
+
+def test_unquoted_colon_in_description_fails_and_names_skill_and_field():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "Use when X has no effect: use bar instead")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "strict YAML" in err, err
+
+
+def test_unquoted_hash_comment_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "Use when X is set #1 priority")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "comment" in err and "truncated" in err, err
+
+
+def test_description_ending_in_colon_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "Use when X:")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "strict YAML" in err, err
+
+
+def test_colon_followed_by_tab_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "Use when X:\tuse bar")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "strict YAML" in err, err
+
+
+def test_flow_mapping_in_other_fields_passes():
+    skill_md = skill("bunkerweb-foo").replace("---\n\n", "metadata: {author: Bunkerity}\n---\n\n", 1)
+    assert "metadata: {author: Bunkerity}" in skill_md
+    code, err = run({"bunkerweb-foo": skill_md})
+    assert code == 0, err
+
+
+def test_unclosed_double_quote_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", '"Use when X: y')})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "does not close" in err and "strict YAML" in err, err
+
+
+def test_unclosed_single_quote_in_description_fails():
+    code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", "'Use when X: y")})
+    assert code == 1, err
+    assert "bunkerweb-foo" in err and "description" in err and "does not close" in err and "strict YAML" in err, err
+
+
+def test_quoted_or_block_scalar_description_may_hold_colon_and_hash():
+    for value in ('"Use when X: y #z"', "'Use when X: y #z'", ">\n  Use when X: y #z"):
+        code, err = run({"bunkerweb-foo": with_description("bunkerweb-foo", value)})
+        assert code == 0, (value, err)
+
+
 if __name__ == "__main__":
     for name, test in sorted(globals().items()):
         if name.startswith("test_"):
